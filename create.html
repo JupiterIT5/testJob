@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Вызов эвакуатора" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/create.css" />
+    <title>Эвакуатор</title>
+  </head>
+  <body>
+    <nav style="background-color: #fff">
+      <header class="header">
+        <h3 class="logo">Тут эвакуатор</h3>
+        <nav class="nav__list">
+          <li class="nav"><a href="#">О проекте</a></li>
+          <li class="nav"><a href="#">Контакты</a></li>
+        </nav>
+        <a href="#"
+          ><button class="create__advertising" style="line-height: 14px;">Добавить объявление</button></a
+        >
+      </header>
+    </nav>
+    <div class="create__advertising">Создание объявления</div>
+    <section class="form__container">
+      <form method="post">
+        <h2 class="title">
+          <img src="./image/img/pc.png" alt="..." />
+          Заполните все поля формы на размещение своего объявления на сайте.
+          Размещение объявления платное. Стоимость за одно объявление составляет
+          990 руб. Объявление будет опубликовано на сайте после оплаты и
+          проверки модератором.
+        </h2>
+        <div class="input__container">
+          <label for="sity">Выберите ваш город</label>
+          <select name="sity">
+            <option>Москва</option>
+            <option>Омск</option>
+            <option>Санкт-Петербург</option>
+            <option>Екатеринбург</option>
+          </select>
+          <label for="name">Ваше имя</label>
+          <input type="text" minlength="2" name="name" />
+          <label for="phone">Номер мобильного телефона</label>
+          <input
+            type="text"
+            minlength="5"
+            name="phone"
+            placeholder="+7 (999) 999-99-99"
+          />
+          <label for="phone">Номер городского телефона</label>
+          <input type="text" name="phone" placeholder="+7 (999) 999-99-99" />
+          <label for="email">Ваш email</label>
+          <input
+            type="email"
+            minlength="5"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <label for="location">Адрес стоянки эвакуатора</label>
+          <input type="text" name="location" minlength="2" />
+        </div>
+        <fieldset>
+          <legend align="center">Информация</legend>
+        </fieldset>
+        <div class="input__container">
+          <label for="title">Заголовок объявления</label>
+          <input
+            type="text"
+            placeholder="Не более 50 символов"
+            maxlength="50"
+            minlength="5"
+          />
+          <label for="subtitle">Описание оъявления</label>
+          <textarea
+            name="subtitle"
+            placeholder="Не более 50 символов"
+          ></textarea>
+        </div>
+        <fieldset>
+          <legend align="center">Цены</legend>
+        </fieldset>
+        <div class="price__container">
+            <label for="car">Легковые автомобили</label>
+            <div class="price">
+                <div class="left">
+                    <input type="number">
+                    рублей
+                </div>
+                <div class="right">
+                    <input type="checkbox">
+                    Услугу не оказываю
+                </div>
+            </div>
+        </div>
+        <div class="price__container">
+            <label for="moto">Мототехника</label>
+            <div class="price">
+                <div class="left">
+                    <input type="number">
+                    рублей
+                </div>
+                <div class="right">
+                    <input type="checkbox">
+                    Услугу не оказываю
+                </div>
+            </div>
+        </div>
+        <div class="price__container">
+            <label for="SUV">Внедорожник</label>
+            <div class="price">
+                <div class="left">
+                    <input type="number">
+                    рублей
+                </div>
+                <div class="right">
+                    <input type="checkbox">
+                    Услугу не оказываю
+                </div>
+            </div>
+        </div>
+        <div class="price__container">
+            <label for="bus">Микроавтобус</label>
+            <div class="price">
+                <div class="left">
+                    <input type="number">
+                    рублей
+                </div>
+                <div class="right">
+                    <input type="checkbox">
+                    Услугу не оказываю
+                </div>
+            </div>
+        </div>
+        <div class="price__container">
+            <label for="tarif">Загородный тариф</label>
+            <div class="price">
+                <div class="left">
+                    <input type="number">
+                    руб/км
+                </div>
+                <div class="right">
+                    <input type="checkbox">
+                    Услугу не оказываю
+                </div>
+            </div>
+        </div>
+        <fieldset>
+          <legend align="center">Фото</legend>
+        </fieldset>
+        <div class="input__container">
+          <label for="photo">Прикрепите фотографию к объявлению</label>
+          <div class="photo">Загрузить</div>
+          <input type="file" class="input__photo" />
+        </div>
+        <div class="accept">
+          <input type="checkbox" name="accept" />
+          <p>
+            Я соглашаюсь с правилами использования сервиса, а также с передачей
+            и обработкой моих данных в evarus.ru. Я подтверждаю своё
+            совершеннолетие и ответственность за размещение.
+          </p>
+        </div>
+        <button type="submit" class="submit">Продолжить</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="img">Трактор</div>
+      <nav class="nav__list">
+        <a href="#" class="nav">Вызвать эвакуатор</a>
+        <a href="#" class="nav">Добавить эвакуатор на сайт</a>
+        <a href="#" class="nav">помощь</a>
+        <a href="#" class="nav">Правила оплаты</a>
+        <a href="#" class="nav">Защита персональных данных</a>
+      </nav>
+    </footer>
+  </body>
+</html>
